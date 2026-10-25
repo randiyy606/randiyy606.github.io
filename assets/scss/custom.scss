@@ -65,3 +65,13 @@
 .about-description {
   display: none;
 }
+
+// ----- 关于页头衔放大 -----
+// 头衔是关于页的主介绍文案。桌面端文字区约 755px(容器 1140px 封顶),
+// 15 字取 48px 恰好一行基本排满;容器封顶后字号随之上限锁定,
+// 窄屏按视口比例回落,手机端保底 1.2rem。
+.intro-subtitle {
+  font-size: clamp(1.2rem, 3.85vw, 3rem);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+}
