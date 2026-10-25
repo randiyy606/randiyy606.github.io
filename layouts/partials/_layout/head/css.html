@@ -1,0 +1,9 @@
+{{- /* 站点级 CSS 加载(覆盖主题同名 partial):先加载主题主样式,再加载站点自定义 custom.scss */ -}}
+{{- $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" (not hugo.IsProduction) }}
+{{- with resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end -}}
+{{- $customOpts := dict "transpiler" "dartsass" "targetPath" "css/custom.css" "outputStyle" "compressed" "enableSourceMap" (not hugo.IsProduction) }}
+{{- with resources.Get "scss/custom.scss" | toCSS $customOpts | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{- end -}}

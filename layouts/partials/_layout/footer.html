@@ -1,0 +1,29 @@
+{{- /* 站点级页脚模板(覆盖主题同名模板):仅保留快速链接与版权链接行 */ -}}
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      {{- /* 快速链接区域 */ -}}
+      <div class="footer-section">
+        <h2 class="title-anime">{{ i18n "footer_quick_links" }}</h2>
+        <ul class="footer-links quick-links-grid">
+          {{ range site.Menus.main }}
+          <li><a href="{{ .URL }}" class="footer-link">{{ with .Params.icon }}<i class="{{ . }}"></i>{{ end }}{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{- /* 版权信息区域：菜单链接 + 动态版权 + 运行时间 + 技术支持 */ -}}
+    <div class="copyright">
+      <div class="copyright-links">
+        {{ range site.Menus.footer }}
+        <a href="{{ .URL }}" class="footer-link">{{ with .Params.icon }}<i class="{{ . }}"></i>{{ end }}{{ .Name }}</a>
+        {{ end }}
+        <a href="{{ "sitemap.xml" | relURL }}" class="footer-link"><i class="fas fa-sitemap"></i> {{ i18n "footer_sitemap" }}</a>
+        <a href="{{ "index.xml" | relURL }}" class="footer-link"><i class="fas fa-rss"></i> {{ i18n "footer_rss" }}</a>
+      </div>
+      <p id="footer-copyright" style="display:none"></p>
+      <p class="site-uptime" style="display:none"><i class="fas fa-clock"></i> <span id="uptime-display">{{ i18n "footer_uptime_loading" }}</span></p>
+      <p class="powered-by" id="footer-powered" style="display:none"></p>
+    </div>
+  </div>
+</footer>
