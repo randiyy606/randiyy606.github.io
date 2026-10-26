@@ -180,13 +180,6 @@ enableGitInfo = true
       icon = 'fas fa-archive'
 
   [[menus.main]]
-    name = '标签'
-    pageRef = '/tags/'
-    weight = 20
-    [menus.main.params]
-      icon = 'fas fa-tags'
-
-  [[menus.main]]
     name = '关于'
     pageRef = '/about'
     weight = 30
