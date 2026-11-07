@@ -132,8 +132,8 @@ about:
       - type: "website"
         icon: "fas fa-globe"
         label: "网站"
-        value: "azxt.org"                    # 网站域名
-        link: "https://azxt.org"
+        value: "randiyy606.github.io"        # 网站域名
+        link: "https://randiyy606.github.io"
 
     note: "欢迎交流技术问题、项目合作或开源贡献！"  # 联系方式底部备注文字
 
@@ -371,7 +371,7 @@ friends:
 
     siteInfo:                                # 本站信息，方便申请者填写
       name: "randi"               # 本站名称
-      url: "https://azxt.org"               # 本站网址
+      url: "https://randiyy606.github.io"   # 本站网址
       description: "randi的个人博客 - 分享技术、生活和思考"  # 本站描述
 
     contactTitle: "联系方式"                  # 联系方式区块标题

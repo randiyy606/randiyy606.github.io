@@ -16,7 +16,7 @@
 # defaultContentLanguage: 默认内容语言代码。
 # defaultContentLanguageInSubdir: 是否将默认语言的内容放在子目录中，false 表示根目录即为默认语言。
 # enableGitInfo: 开启后可在页面底部显示基于 Git 提交记录的最后更新时间。
-baseURL = 'https://azxt.org/'
+baseURL = 'https://randiyy606.github.io/'
 locale = 'zh-CN'
 languageName = '中文'
 title = 'randi'
@@ -41,7 +41,7 @@ enableGitInfo = true
   description = "randi的个人博客 - 分享技术、生活和思考"
   email = "3084874014@qq.com"
   github = "aizexintong"
-  domain = "azxt.org"
+  domain = "randiyy606.github.io"
   siteTime = "2026-04-01T00:00:00+08:00"
 
   # ----- 功能开关 -----

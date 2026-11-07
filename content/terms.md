@@ -1,4 +1,4 @@
-﻿---
+---
 title: "使用条款"
 description: "幻梦主题使用条款"
 layout: "legal"
@@ -46,4 +46,4 @@ layout: "legal"
 如果您对这些条款有任何疑问，请通过以下方式联系我们：
 
 - **邮箱**: 3084874014@qq.com
-- **网站**: [azxt.org](https://azxt.org)
+- **网站**: [randiyy606.github.io](https://randiyy606.github.io)

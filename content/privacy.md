@@ -1,4 +1,4 @@
-﻿---
+---
 title: "隐私政策"
 description: "幻梦主题隐私政策"
 layout: "legal"
@@ -103,7 +103,7 @@ layout: "legal"
 如果您对本隐私政策有任何疑问，请通过以下方式联系我们：
 
 - **邮箱**: 3084874014@qq.com
-- **网站**: [azxt.org](https://azxt.org)
+- **网站**: [randiyy606.github.io](https://randiyy606.github.io)
 
 ---
 
